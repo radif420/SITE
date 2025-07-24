@@ -24,7 +24,14 @@ export function SiteConfigProvider({ children }: { children: ReactNode }) {
         const savedSettings = await loadSiteSettings();
         if (savedSettings) {
           updateSiteConfig(savedSettings);
-          setConfig({ ...currentSiteConfig, ...savedSettings });
+          setConfig({
+  ...currentSiteConfig,
+  ...savedSettings,
+  contact: {
+    ...currentSiteConfig.contact,
+    ...(savedSettings.contact || {})
+  }
+});
           
           // Apply theme changes immediately
           const styleElement = document.createElement('style');
