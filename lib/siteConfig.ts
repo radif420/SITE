@@ -26,10 +26,10 @@ export const siteConfig = {
   
   // Contact Information
   contact: {
-    phone: '+880 1712-345678',
-    whatsapp: '+8801712345678', // WhatsApp number (without + for URL)
-    whatsappDisplayText: '+880 1712-345678',
-    email: 'order@pustibhai.com',
+    phone: '+880 1560044565',
+    whatsapp: '+8801560044565', // WhatsApp number (without + for URL)
+    whatsappDisplayText: '+880 1560044565',
+    email: 'jahirradif@gmail.com',
     address: 'Dhaka, Bangladesh',
     
     // Delivery Areas
