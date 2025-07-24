@@ -59,7 +59,7 @@ export const saveSiteSettings = async (settings: SiteSettings): Promise<boolean>
       .upsert({
         id: 'main',
         ...settings,
-        updated_at: new Date().toISOString()
+        updatedAt: newConfig.updatedAt || new Date().toISOString()
       });
 
     if (error) {
