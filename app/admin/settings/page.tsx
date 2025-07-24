@@ -56,9 +56,9 @@ export default function SettingsPage() {
   });
 
   // Delivery Areas
-  const [deliveryAreas, setDeliveryAreas] = useState(
-    siteConfig.contact?.deliveryAreas || ['Dhaka City', 'Chittagong', 'Sylhet', 'Rajshahi', 'Khulna', 'Barisal']
-  );
+const [deliveryAreas, setDeliveryAreas] = useState<string[]>(
+  siteConfig.contact?.deliveryAreas || ['Dhaka City', 'Chittagong', 'Sylhet', 'Rajshahi', 'Khulna', 'Barisal']
+);
   const [newArea, setNewArea] = useState('');
   const [logoPreview, setLogoPreview] = useState<string | null>(siteConfig.logo?.path || null);
   const [coverPhotoPreview, setCoverPhotoPreview] = useState<string | null>(
