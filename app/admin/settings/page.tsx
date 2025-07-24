@@ -17,7 +17,6 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import Link from 'next/link';
 import { ArrowLeft, Save, Palette, Globe, Phone, MapPin, Image as ImageIcon } from 'lucide-react';
 import { toast } from 'sonner';
-import { supabase } from '@/lib/supabaseClient'; // <-- Supabase import
 
 export default function SettingsPage() {
   const { isAdminLoggedIn } = useAdmin();
